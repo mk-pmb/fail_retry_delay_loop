@@ -1,0 +1,30 @@
+{ "name": "fail_retry_delay_loop",
+  "version": "0.1.1",
+  "npmInstallUrl": {
+    "default": "git+https://github.com/mk-pmb/fail_retry_delay_loop.git#master"
+  },
+  "description": "Repeat a command until it succeeds, with a delay between retries.",
+  "keywords": [],
+
+  "author": "Instaffo GmbH",
+  "homepage": "https://github.com/mk-pmb/fail_retry_delay_loop-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/fail_retry_delay_loop-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/fail_retry_delay_loop-js/issues"
+  },
+  "contributors": [
+    "M.K. (https://github.com/mk-pmb)"
+  ],
+
+  "private": false, "license": "MIT",
+
+  "bin": "fail_retry_delay_loop.sh",
+  "directories": { "test": "test" },
+  "scripts": { "test": "bash test/_all.sh" },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}

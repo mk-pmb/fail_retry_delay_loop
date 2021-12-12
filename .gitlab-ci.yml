@@ -1,0 +1,21 @@
+stages:
+  - test
+
+job_test_in_alpine:
+  stage: test
+  image: "alpine:latest"
+  variables:
+    # ALPTRAUM_BRANCH: "experimental"
+    ALPTRAUM_BIN_SYM: "
+      fail_retry_delay_loop.sh
+      "
+  script:
+    - sh devel/ci/alptraum ./test/_all.sh
+
+job_test_in_node:
+  stage: test
+  image: "node:12"
+  script:
+    - npm install .
+    - npm link
+    - npm test
